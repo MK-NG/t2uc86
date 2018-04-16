@@ -44,3 +44,8 @@ def send_image(filename):
 
 if __name__ == "__main__":
     app.run(port=4555, debug=True)
+
+
+@app.errorhandler(500)
+def server_error(e):
+    return render_template('error.html'), 500
