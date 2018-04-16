@@ -5,7 +5,23 @@
 
 <body>
     <div class="wrapper">
-Uploaded
+
+        <script> var timeleft = 10;
+                var downloadTimer = setInterval(function(){
+                  document.getElementById("progressBar").value = 10 - --timeleft;
+                  if(timeleft <= 0)
+                    clearInterval(downloadTimer);
+                },1000); 
+                
+                
+            </script>
+<center></center>
+<progress value="0" max="10" id="progressBar"></progress>
+
+
+
+Analyzing...
+</center>
 <img src=" {{url_for('send_image', filename=image_name)}}">
 
 </div>
