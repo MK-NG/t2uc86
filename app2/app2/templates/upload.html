@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+ 
+
+
+<div class= "wrapper">
+    <h1>Upload an Image</h1>
+    <hr>
+    <h2>Upload a Satelitte Image to Analzye for the detection of Freight Vehicles.</h2>
+     
+   <br />
+    
+    <form id="upload-form" action="{{ url_for('upload') }}" method='POST' enctype='multipart/form-data'>
+    
+                <input id="file" type="file" name="file"  class="inputfile" accept ="image/.*" data-multiple-caption="{count} files selected" multiple />
+                <label for="file"> <strong><span> Choose Image(s)</span></strong></label>
+<br /></br />
+<strong>
+    
+<input type='submit' value='Analyze...'>
+</strong>
+
+                
+            
+
+         
+
+</div>
+
+
+
+<script src="{{
+    url_for('static', filename='js/script.js') }}"></script>  
+
+
+{% endblock %}
+
+

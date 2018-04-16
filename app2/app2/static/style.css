@@ -1,0 +1,182 @@
+html, body {
+   margin: 0;
+   padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+   background:#f4f7f7;
+ 
+}
+
+h1 {
+
+    line-height: .7em;
+}
+
+h2 {
+   font-size: 20px;
+   line-height: .7em;
+   
+}
+
+h3 {
+    
+    color: white;
+    font-size: 35px;
+    padding: 15px 0px 15px 20px;
+   
+}
+
+h4 {
+    font-size: 20px;
+}
+
+header {
+    background-color: #24A141;
+    box-shadow: 0px 2px 5px grey;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #FF950D;
+}
+
+.wrapper {
+   
+    margin-top: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: solid #edefef .5px;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.2);
+    padding: 5px 5px 5px 15px;
+    
+}
+
+
+#logo {
+    height: 94px;
+    float: left;
+    padding-right: 30px;
+}
+
+.button {
+    background-color: #00823b;
+    position: relative;
+    display: inline-block;
+    padding: 5px 7px;
+    margin: 0px 4px 0px 0px;
+    border: none;
+    border-radius: 0;
+    outline: 1px solid transparent;
+    outline-offset: -1px;
+    box-shadow: 0 2px 0 #003618;
+    font-size: 16px;
+    line-height: 1.25;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+}
+
+button:focus {
+    outline: 3px solid #61A831;
+}
+
+input[type=text]
+{
+    box-sizing: border-box;
+   font-size: 16px;
+    margin: 5px 0px;
+    padding: 5px 5px;
+    border: 2px solid black;
+    
+}
+
+input:focus {
+    outline: none ;
+    outline:3px solid #61A831;
+    outline-offset: 0;
+        
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+    padding: 15px 18px;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    background-color: #FF950D;
+    color: white;
+    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.3)
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    opacity: .8;
+}
+
+.inputfile + label {
+	cursor: pointer; 
+}
+
+.inputfile:focus + label {
+	outline: none ;
+    outline:3px solid black;
+    outline-offset: 0;
+}
+
+input[type=submit]
+{
+    padding: 10px 12px;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    background-color: #0074B2;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+   
+}
+
+
+input[type=submit]:hover
+{
+    opacity: .8;
+
+    
+}
+

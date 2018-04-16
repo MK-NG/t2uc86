@@ -1,0 +1,36 @@
+<html>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+       
+<header>
+        
+          
+
+    <a href="/"></href> <img id='logo' src='static/img/dft_lab_truck.png'></a>
+    <ul>  
+            <li> <a href="/">Upload</a></li>
+            <li> <a href="{{ url_for('get_gallery') }}">Gallery</a></li>
+            <li> <a href="{{ url_for('about_us') }}">About</a></li>
+         </ul>
+           
+    <h3> Tracking Freights Via Satellite</h3>
+               
+  
+           
+
+</header>
+<body>
+        
+    
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul>
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+    
+</body>
+</html>
