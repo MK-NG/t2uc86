@@ -14,7 +14,7 @@
     
     <form id="upload-form" action="{{ url_for('upload') }}" method='POST' enctype='multipart/form-data'>
     
-                <input id="file" type="file" name="file[]"  class="inputfile" accept ="image/.*" data-multiple-caption="{count} files selected" multiple />
+                <input id="file" type="file" name="file"  class="inputfile" accept ="image/.*" data-multiple-caption="{count} files selected" multiple />
                 <label for="file"> <strong><span> Choose Image(s)</span></strong></label>
 <br /></br />
 <strong>
@@ -26,18 +26,7 @@
             
 
          
-    </form> 
 
-    <form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
-
-        <strong>Files:</strong><br>
-        
-        <input id="file" type="file" name="file" accept="image/*"  multiple>
-        
-       
-<br />
-        <input type="submit" value="Analyze!" id="upload-button">
-    </form>
 </div>
 
 

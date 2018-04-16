@@ -1,7 +1,7 @@
 import os
 from uuid import uuid4
-
 from flask import Flask, request, render_template, send_from_directory
+
 
 app = Flask(__name__, static_folder="static")
 
@@ -11,6 +11,7 @@ app = Flask(__name__, static_folder="static")
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 @app.route("/")
+@app.route("/upload")
 def index():
     return render_template("upload.html")
 
@@ -18,6 +19,7 @@ def index():
 def upload():
     target = os.path.join(APP_ROOT, 'images/')
     print(target)
+    #If no path creates path 
     if not os.path.isdir(target):
             os.mkdir(target)
     else:
@@ -33,6 +35,8 @@ def upload():
         upload.save(destination)
 
     return render_template("complete.html", image_name=filename)
+
+ 
 
 @app.route('/upload/<filename>')
 def send_image(filename):
