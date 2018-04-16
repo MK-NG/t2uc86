@@ -49,9 +49,6 @@ def get_gallery():
     return render_template("gallery.html", image_names=image_names)
 
 
-if __name__ == "__main__":
-    app.run(port=4555, debug=True)
-
 
 @app.errorhandler(500)
 def server_error(e):
@@ -60,4 +57,7 @@ def server_error(e):
 
 @app.route('/about')
 def about_us():
-        return render_template('about.html', title='About Us')
+    return render_template('about.html', title='About Us')
+
+if __name__ == "__main__":
+    app.run(port=4555, debug=True)
