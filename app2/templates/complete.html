@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<body>
+Uploaded
+<img src=" {{url_for('send_image', filename=image_name)}}">
+</body>
+
+{% endblock %}
