@@ -160,6 +160,7 @@ input:focus {
 
 input[type=submit]
 {
+    border: 0;
     padding: 10px 12px;
     margin: 0;
     position: relative;
@@ -180,3 +181,6 @@ input[type=submit]:hover
     
 }
 
+#preview {
+max-height: 300px;
+}
